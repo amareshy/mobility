@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">4MDoc</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="title_activity_select_language_screen">SelectLanguageScreen</string>
+    <string name="edu_content_1">24x7 availability for doctor. Pathology and medicine.</string>
+    <string name="edu_content_2">Connect with doctor on mobile.</string>
+    <string name="edu_content_3">Get test report online on mobile.</string>
+    <string name="edu_content_4">Order medicine online.</string>
+    <string name="edu_content_5">Get online health care tips.</string>
+    <string name="footer_content">Reach us for any query at info@4mdoctor.com or call us on +91-9999999999</string>
+
+    <string name="title_activity_education_screen">EducationScreen</string>
+    <string name="title_activity_mobile_otpveify_screen">MobileOTPVeifyScreen</string>
+
+    <string name="goText">Go</string>
+    <string name="let_start_button">Let\'s Start</string>
+    <string name="send_otp">Send OTP</string>
+
+    <string name="pin_content_desc">PIN input field</string>
+    <string name="pin_label_text">PIN</string>
+
+</resources>

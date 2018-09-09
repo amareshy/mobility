@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appBgColor"
+    tools:context=".SelectLanguageScreen">
+
+    <include android:id="@+id/header_logo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/logo_layout" />
+
+    <RelativeLayout
+        android:id="@+id/parentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <Spinner
+            android:id="@+id/select_lang_spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:gravity="center"
+            android:background="#CBCBCB"
+            android:tooltipText="Select Language" />
+
+        <Button
+            android:id="@+id/goButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/select_lang_spinner"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/button_margin_top"
+            android:onClick="onClick"
+            android:text="@string/goText" />
+    </RelativeLayout>
+
+    <include
+        layout="@layout/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp" />
+</RelativeLayout>
