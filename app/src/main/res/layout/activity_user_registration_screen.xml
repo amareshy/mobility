@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserRegistrationScreen"
+    android:background="@color/appBgColor">
+
+    <include
+        android:id="@+id/header_logo"
+        layout="@layout/logo_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/parentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header_logo"
+        android:layout_above="@+id/footer"
+        android:layout_marginTop="20dp">
+
+        <Spinner
+            android:id="@+id/select_location"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:gravity="center"
+            android:background="@color/appBgColor"
+            android:autofillHints="Your current location" />
+
+        <EditText
+            android:id="@+id/nameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/select_location"
+            android:layout_alignLeft="@+id/select_location"
+            android:layout_alignRight="@+id/select_location"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:tooltipText="Your Name" />
+
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/select_location"
+            android:layout_alignEnd="@+id/select_location"
+            android:layout_below="@+id/nameEditText"
+            android:layout_marginTop="8dp"
+            android:tooltipText="Emal"
+            android:ems="10"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/select_location"
+            android:layout_alignEnd="@+id/select_location"
+            android:layout_below="@+id/emailEditText"
+            android:layout_marginTop="8dp"
+            android:tooltipText="Password"
+            android:ems="10"
+            android:inputType="textPassword" />
+        <EditText
+            android:id="@+id/confPasswordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/select_location"
+            android:layout_alignEnd="@+id/select_location"
+            android:layout_below="@+id/passwordEditText"
+            android:layout_marginTop="8dp"
+            android:tooltipText="Password"
+            android:ems="10"
+            android:inputType="textPassword" />
+
+          <Button
+              android:id="@+id/proceedButton"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/confPasswordEditText"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="8dp"
+              android:textStyle="italic"
+              android:onClick="onClick"
+              android:text="@string/proceedText" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/proceedButton"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:text="@string/or" />
+
+
+        <Button
+            android:id="@+id/signInButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:background="@null"
+            android:layout_marginTop="8dp"
+            android:textStyle="italic"
+            android:onClick="onClick"
+            android:text="@string/signIn" />
+
+    </RelativeLayout>
+
+
+    <include android:id="@+id/footer"
+        layout="@layout/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

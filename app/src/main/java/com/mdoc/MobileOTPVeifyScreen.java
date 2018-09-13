@@ -2,6 +2,7 @@ package com.mdoc;
 
 import android.app.Service;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
@@ -44,7 +45,11 @@ public class MobileOTPVeifyScreen extends AppCompatActivity implements View.OnCl
 
     @Override
     public void onClick(View v) {
-
+        switch (v.getId()) {
+            case R.id.send_otp_button:
+                Intent intent = new Intent(this, DashboardScreen.class);
+                startActivity(intent);
+        }
     }
 
     @Override

@@ -24,7 +24,7 @@ public class EducationScreen extends AppCompatActivity implements View.OnClickLi
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.let_start_button:
-                Intent intent = new Intent(this, MobileOTPVeifyScreen.class);
+                Intent intent = new Intent(this, UserRegistrationScreen.class);
                 startActivity(intent);
         }
     }
